@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jquery EVENTS.resize()範例</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+ </head>
+ <body>
+ <P>視窗滾動了<span>0</span>次</P>
+ <P>上下滾動式窗是看看喔</P>
+ <P>1</P>
+  <P>2</P>
+   <P>3</P>
+    <P>4</P>
+     <P>5</P>
+      <P>6</P>
+       <P>7</P>
+        <P>8</P>
+         <P>9</P>
+         <P>10</P>
+         <P>11</P>
+         <P>12</P>
+         <P>13</P>
+         <P>14</P>
+         <P>15</P>
+<script>
+    var x= 0;
+//先定義X裡面數字從為0
+$( window ).scroll(function() {
+//選擇到window就是網頁視窗的意思，執行scroll指令
+  $( "span" ).text(x+=1);
+//執行scroll指令後選擇到span標籤，將裡面的文字顯示為x+1，所以只要每調整一次視窗就會觸發一次
+//藉由此項指令紀錄使用者看我們網頁的時候滾動的次數
+});
+</script>  
+ </body>
+</html>
+

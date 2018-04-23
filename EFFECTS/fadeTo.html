@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jquery EFFECTS.fadeTo()範例</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <style>
+    #toggle1 {
+      background-color:red;
+      width: 200px;
+      font-size:90px;
+    }
+  </style>
+ </head>
+ <body> 
+ <button id="btn0">淡入</button>
+ <P id="toggle1">淡入</P>
+   <script>
+ $("#btn0").click(function() {
+//選擇到id=btn0的按鈕.當按鈕執行滑鼠點擊時，要執行的動作
+  $( "P" ).fadeTo("slow",0.4);
+  //選擇到P標籤 執行fadeOut動作3秒完成，這邊要注意指令大小寫有差別一定要對
+});
+</script>  
+ </body>
+</html>
+

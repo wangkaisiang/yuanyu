@@ -1,0 +1,27 @@
+ul.playlist {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 260px;
+	float: left;
+}
+ul.playlist li {
+	margin: 0 3px;
+	float: left;
+}
+ul.playlist li a img {
+	border: 0;
+	vertical-align: middle;
+}
+ 
+.tv {
+	background: #666;
+	padding: 10px;
+	width: 740px;
+	height: 360px;
+}
+.video {
+	float: left;
+	width: 480px;
+	height: 360px;
+}

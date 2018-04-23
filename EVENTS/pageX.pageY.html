@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jquery EVENTS.pageXY()範例</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <style>
+    P {
+      position:absolute;
+      background-color:yellow;
+      width: 200px;
+      height: 200px;
+      left:0px;
+    }
+  </style>
+ </head>
+ <body>
+<P>width: 200px</P>
+<div id="pagexy"></div>
+ 
+<script>
+$( document ).on( "mousemove", function( event ) {
+  //選擇整個網頁，滑鼠移動的執行事件
+  $( "#pagexy" ).text( "pageX: " + event.pageX + ", pageY: " + event.pageY );
+  //選擇id=pagexy加入文字pageX:偵測到的橫坐標 ,pageY:偵測到的縱座標
+  //偵測到的數字是以px為單位，P標籤設定的顏色方塊就是讓人更容易理解
+});
+</script>
+ 
+</body>
+</html>
+

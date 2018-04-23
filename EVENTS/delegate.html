@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jquery EVENTS.delegate()範例</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <style>
+    P{
+background-color:yellow;
+    }
+/*將標籤P底色設定為黃色
+  </style>
+ <script>
+  $(document).ready(function(){
+$("P").delegate("#btn0","click",function(){
+  $("span").slideToggle();
+  //將標籤span裡面的內容滑入滑出
+  });
+$("button").click(function(){
+  //選擇到button點擊後觸發事件
+    $("<p>这是一个新段落。</p>").insertAfter("button");
+    //將新增一個標籤<P>這是一個新段落</P>，插入於button後面
+  });
+});
+</script>
+ </head>
+ <body>
+ <P><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates voluptate nulla mollitia pariatur tenetur soluta, quisquam labore aspernatur sed amet dolorum ullam, rerum, ratione distinctio quia iusto rem. Quas, et.</span><button id="btn0">點我</button></P> 
+ </body>
+</html>
+

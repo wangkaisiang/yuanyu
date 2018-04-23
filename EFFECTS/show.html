@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jquery EFFECTS.show()範例</title>
+  <script src="js/jquery-3.3.1.min.js"></script>
+ </head>
+ <body> 
+ <button id="btn0">點我顯示哦</button>
+ <button id="btn1">點我顯示時間兩秒</button> 
+ <button id="btn2">點我顯示fast</button> 
+ <button id="btn3">點我顯示slow</button>
+ <button id="btn4">全部顯示</button> 
+ <p style="display: none" id="show0">點我顯示</p>
+ <p style="display: none" id="show1">點我顯示哦</p>
+ <p style="display: none" id="show2">點我顯示(時間兩秒)</p>
+ <p style="display: none" id="show3">點我顯示(fast)</p>
+ <p style="display: none" id="show4">點我顯示(slow)</p>
+
+   <script>
+ $("#show0").show();
+ //直接顯示標籤<p> 裡面id設定為show0內的內容
+ $( "#btn0" ).click(function() {
+//選擇到id=btn0的按鈕.當按鈕執行滑鼠點擊時，要執行的動作
+  $( "#show1" ).show();
+//動作=選擇id=show1，做內容顯示
+});
+ $( "#btn1" ).click(function() {
+//選擇到id=btn1的按鈕.當按鈕執行滑鼠點擊時，要執行的動作
+  $( "#show2" ).show(2000);
+//動作=選擇id=show2,但顯示時間設定為兩秒
+});
+ $( "#btn2" ).click(function() {
+//選擇到id=btn2的按鈕.當按鈕執行滑鼠點擊時，要執行的動作
+  $( "#show3" ).show("fast");
+//動作=選擇id=show3,但顯示時間設定快速
+});
+ $( "#btn3" ).click(function() {
+//選擇到id=btn3的按鈕.當按鈕執行滑鼠點擊時，要執行的動作
+  $( "#show4" ).show("slow");
+//動作=選擇id=show4,但顯示時間設定緩慢
+});
+ $( "#btn4" ).click(function() {
+//選擇到id=btn4的按鈕.當按鈕執行滑鼠點擊時，要執行的動作
+  $( "P" ).show();
+//顯示所有P標籤
+});
+</script>  
+ </body>
+</html>
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jquery EFFECTS.toggle()範例</title>
+  <script src="js/jquery-3.3.1.min.js"></script>
+ </head>
+ <body> 
+ <button id="btn0">點我顯示哦</button>
+ <button id="btn1">點我顯示時間兩秒</button> 
+ <button id="btn2">點我顯示fast</button> 
+ <button id="btn3">點我顯示slow</button>
+ <button id="btn4">全部顯示</button> 
+ <p id="toggle0">點我顯示</p>
+ <p style="display: none" id="toggle1">點我顯示哦</p>
+ <p style="display: none" id="toggle2">點我顯示(時間兩秒)</p>
+ <p style="display: none" id="toggle3">點我顯示(fast)</p>
+ <p style="display: none" id="toggle4">點我顯示(slow)</p>
+
+   <script>
+ $("#toggle0").toggle();
+ //直接顯示標籤<p> 裡面id設定為toggle0內的內容
+ $( "#btn0" ).click(function() {
+//選擇到id=btn0的按鈕.當按鈕執行滑鼠點擊時，要執行的動作
+  $( "#toggle1" ).toggle();
+//動作=選擇id=toggle1，做內容顯示
+});
+ $( "#btn1" ).click(function() {
+//選擇到id=btn1的按鈕.當按鈕執行滑鼠點擊時，要執行的動作
+  $( "#toggle2" ).toggle(2000);
+//動作=選擇id=toggle2,但顯示時間設定為兩秒
+});
+ $( "#btn2" ).click(function() {
+//選擇到id=btn2的按鈕.當按鈕執行滑鼠點擊時，要執行的動作
+  $( "#toggle3" ).toggle("fast");
+//動作=選擇id=toggle3,但顯示時間設定快速
+});
+ $( "#btn3" ).click(function() {
+//選擇到id=btn3的按鈕.當按鈕執行滑鼠點擊時，要執行的動作
+  $( "#toggle4" ).toggle("slow");
+//動作=選擇id=toggle4,但顯示時間設定緩慢
+});
+ $( "#btn4" ).click(function() {
+//選擇到id=btn4的按鈕.當按鈕執行滑鼠點擊時，要執行的動作
+  $( "P" ).toggle();
+//顯示所有P標籤
+});
+</script>  
+ </body>
+</html>
+

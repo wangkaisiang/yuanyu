@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jquery EVENTS.mousedown.mouseup()範例</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+ </head>
+ <body>
+ <button id="btn0">點我</button>
+ <P style="color:red">滑鼠點擊橘色滑鼠點擊後放開時藍色</P>
+<script>
+	$( "p" ).click(function( event ) {
+  alert( event.currentTarget === this ); // true
+});
+$("#btn0").mousedown(function(){
+  //當選擇到ID#btn0按鈕，滑鼠左鍵點擊時
+$("P").css("background-color","orange");
+//P標籤背景顏色改為橘色
+});
+$("#btn0").mouseup(function(){
+  //當選擇到ID#btn0按鈕，滑鼠左鍵點擊放開時
+$("P").css("background-color","blue");
+//P標籤背景顏色改為橘色
+});
+
+</script>  
+ </body>
+</html>
+

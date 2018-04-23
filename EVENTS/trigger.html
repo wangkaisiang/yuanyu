@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jquery EVENTS.bind()範例</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+ </head>
+ <body>
+ <button id="btn0">點我淡入淡出</button>
+ <button id="btn1">點我滑入滑出</button>
+ <div id="btn2"><a href="#">點我一次觸發按鈕動作</a></div>
+ <P style="font-size: 50px;">●</P>
+<script>
+ $("#btn0").click(function() {
+//選擇到id=btn0的按鈕.當按鈕執行滑鼠點擊時，要執行的動作
+  $("P").fadeOut().fadeIn();
+  //標籤P淡入淡出
+});
+  $("#btn1").click(function() {
+//選擇到id=btn0的按鈕.當按鈕執行滑鼠點擊時，要執行的動作
+  $( "P" ).slideUp().slideDown();
+  //標籤P滑入滑出
+});
+  $("#btn2").click(function(){
+//選擇到id=btn2的按鈕.當按鈕執行滑鼠點擊時，要執行的動作
+    $("button").trigger("click");
+//選擇到所有的button標籤，處發click的動作會全部執行
+  });
+</script>  
+ </body>
+</html>
+

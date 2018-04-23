@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jquery EFFECTS.hide()範例</title>
+  <script src="js/jquery-3.3.1.min.js"></script>
+ </head>
+ <body> 
+ <button id="btn0">點我隱藏哦</button>
+ <button id="btn1">點我隱藏時間兩秒</button> 
+ <button id="btn2">點我隱藏fast</button> 
+ <button id="btn3">點我隱藏slow</button>
+ <button id="btn4">全部隱藏</button> 
+ <p id="hide0">點我隱藏</p>
+ <p id="hide1">點我隱藏哦</p>
+ <p id="hide2">點我隱藏(時間兩秒)</p>
+ <p id="hide3">點我隱藏(fast)</p>
+ <p id="hide4">點我隱藏(slow)</p>
+
+   <script>
+ $("#hide0").hide();
+ //直接隱藏標籤<p> 裡面id設定為hide0內的內容
+ $( "#btn0" ).click(function() {
+//選擇到id=btn0的按鈕.當按鈕執行滑鼠點擊時，要執行的動作
+  $( "#hide1" ).hide();
+//動作=選擇id=hide1，做內容隱藏
+});
+ $( "#btn1" ).click(function() {
+//選擇到id=btn1的按鈕.當按鈕執行滑鼠點擊時，要執行的動作
+  $( "#hide2" ).hide(2000);
+//動作=選擇id=hide2,但隱藏時間設定為兩秒
+});
+ $( "#btn2" ).click(function() {
+//選擇到id=btn2的按鈕.當按鈕執行滑鼠點擊時，要執行的動作
+  $( "#hide3" ).hide("fast");
+//動作=選擇id=hide3,但隱藏時間設定快速
+});
+ $( "#btn3" ).click(function() {
+//選擇到id=btn3的按鈕.當按鈕執行滑鼠點擊時，要執行的動作
+  $( "#hide4" ).hide("slow");
+//動作=選擇id=hide4,但隱藏時間設定緩慢
+});
+ $( "#btn4" ).click(function() {
+//選擇到id=btn4的按鈕.當按鈕執行滑鼠點擊時，要執行的動作
+  $( "P" ).hide();
+//隱藏所有P標籤
+});
+</script>  
+ </body>
+</html>
+

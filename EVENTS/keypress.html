@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jquery EVENTS.event.which()範例</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <style>
+  p {
+    margin: 0;
+    color: blue;
+  }
+  span {
+    color: red;
+  }
+  </style>
+</head>
+<body>
+ 
+<p style="color:red">請隨便按下鍵盤按鍵，這邊加入了一個互動按上下左右背景會變顏色，按下空白鍵背景顏色會變回白色</p>
+<input type="text"></input>
+<span></span>
+ 
+<script>
+$("input").keydown(function(){
+  //選擇到input標籤 按鍵按下時
+$("span").html("key:" + event.which);
+//標籤span會顯示key:偵測到的按鍵keycode數字
+});
+      function keyevent(){
+        //定義一個按鍵事件
+     if(event.keyCode==38){
+      //如果event.keycode等於38
+     $("body").css("background-color","orange");
+     //把標籤body背景顏色改為橘色
+     }
+     //如果event.keycode不等於38執行下列
+      if(event.keyCode==37){
+        //如果event.keycode等於37
+     $("body").css("background-color","yellow");
+     //把標籤body背景顏色改為黃色
+     }
+     //如果event.keycode不等於37執行下列
+      if(event.keyCode==39){
+        //如果event.keycode等於39
+     $("body").css("background-color","blue");
+     //把標籤body背景顏色改為藍色
+     }
+      if(event.keyCode==40){
+        //如果event.keycode等於40
+     $("body").css("background-color","green");
+     //把標籤body背景顏色改為綠色
+     }
+     if(event.keyCode==32){
+      //如果event.keycode等於32
+     $("body").css("background-color","white");
+     //把標籤body背景顏色改為白色
+     }
+ }
+     document.onkeydown = keyevent;
+     //繼續回去執行function keyevent
+</script>
+</body>
+</html>
+
+

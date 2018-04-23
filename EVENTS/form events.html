@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jquery EVENTS.form events()範例</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <style>
+    input {
+      height: 30px;
+      width : 100%;
+    }
+  </style>
+  <input type="text" value="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.">lorem</input>
+  <button id="btn0">觸發.blur()效果</button>
+  <button id="btn1">觸發.change()效果</button>
+  <button id="btn2">觸發.focus()效果</button>
+  <button id="btn3">觸發.select()效果</button>
+ <script>
+   $("input").blur(function(){
+   $("input").css("background-color","red");
+   });
+   $("#btn0").click(function(){
+   $("input").blur();
+   });
+   $("input").change(function(){
+   $("input").css("background-color","orange");
+   });
+   $("#btn1").click(function(){
+   $("input").change();
+   });
+   $("input").focus(function(){
+   $("input").css("background-color","yellow");
+   });
+   $("#btn2").click(function(){
+   $("input").focus();
+   });
+    $("input").select(function(){
+   $("input").css("background-color","green");
+   });
+   $("#btn3").click(function(){
+   $("input").select();
+   });
+ </script>
+ </head>
+ <body>
+ </body>
+</html>
+
