@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/all.css">
+  <script src="js/all.js"></script>
+</head>
+<body>
+	<div class="keys">
+	<div id="key83" class="key">do</div>
+	<div id="key68" class="key">re</div>
+	<div id="key70" class="key">mi</div>
+	<div id="key71" class="key">fa</div>
+	<div id="key72" class="key">sol</div>
+	<div id="key74" class="key">la</div>
+	<div id="key75" class="key">si</div>
+    </div>
+<br />
+<br />
+<audio id="audio83" src="sound/do.wav">
+  Your browser does not support HTML5 audio.
+</audio>
+<audio id="audio68" src="sound/re.wav">
+  Your browser does not support HTML5 audio.
+</audio>
+<audio id="audio70" src="sound/mi.wav">
+  Your browser does not support HTML5 audio.
+</audio>
+<audio id="audio71" src="sound/fa.wav">
+  Your browser does not support HTML5 audio.
+</audio>
+<audio id="audio72" src="sound/sol.wav">
+  Your browser does not support HTML5 audio.
+</audio>
+<audio id="audio74" src="sound/la.wav">
+  Your browser does not support HTML5 audio.
+</audio>
+<audio id="audio75" src="sound/si.wav">
+  Your browser does not support HTML5 audio.
+</audio>
+</body>
+</html>
